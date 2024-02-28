@@ -1,5 +1,6 @@
 Part 1:
 1. The failure inducing input for the reversed() method of ArrayExamples:
+
 ```
 @Test
   public void testReversed() {
@@ -12,6 +13,7 @@ Part 1:
 The bug is that the method is returning the original array instead of the new one and the old array was getting updated which doesn't have any elements in it.
 
 2. The input doesn't induce a failure:
+
 ```
 @Test
   public void testReversed() {
@@ -25,6 +27,7 @@ The bug is that the method is returning the original array instead of the new on
 ![image](Symptom.png)
 
 4. The bug(two codes blocks)
+
 ```
     static int[] reversed(int[] arr) {
       int[] newArray = new int[arr.length];
@@ -44,6 +47,7 @@ The bug is that the method is returning the original array instead of the new on
     }
     return newArray;
 ```
+
 The vaiable we want to change is the arr[i], not the newArray[i]. Thus the fix addresses the issue.
 
 part 2: Option 1: -name
