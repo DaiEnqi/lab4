@@ -1,5 +1,5 @@
 Part 1:
-1. The failure inducing input for the reversed() method of ArrayExamples:
+1). The failure inducing input for the reversed() method of ArrayExamples:
 
 ```
 @Test
@@ -12,7 +12,7 @@ Part 1:
 
 The bug is that the method is returning the original array instead of the new one and the old array was getting updated which doesn't have any elements in it.
 
-2. The input doesn't induce a failure:
+2). The input doesn't induce a failure:
 
 ```
 @Test
@@ -23,7 +23,9 @@ The bug is that the method is returning the original array instead of the new on
   }
 
 ```
-3. The symptom for the method
+
+3). The symptom for the method
+
 ![image](Symptom.png)
 
 4. The bug(two codes blocks)
@@ -48,7 +50,9 @@ The bug is that the method is returning the original array instead of the new on
 
 The vaiable we want to change is the arr[i], not the newArray[i]. Thus the fix addresses the issue.
 
-part 2: Option 1: -name
+part 2: 
+
+Option 1: -name
 Description: This option allows you to search for files and directories with a specific name.
 
 Example 1: Finding directories with a specific name
