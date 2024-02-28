@@ -1,4 +1,5 @@
 Part 1:
+
 1). The failure inducing input for the reversed() method of ArrayExamples:
 
 ```
@@ -28,7 +29,7 @@ The bug is that the method is returning the original array instead of the new on
 
 ![image](Symptom.png)
 
-4. The bug(two codes blocks)
+4). The bug(two codes blocks)
 
 ```
     static int[] reversed(int[] arr) {
